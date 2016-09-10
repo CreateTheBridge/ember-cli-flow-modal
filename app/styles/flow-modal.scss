@@ -1,0 +1,93 @@
+// Colors
+$off-white: #f1f1f1;
+$gray: #ccc;
+$light-blue: #3598dc;
+$light-green: #2ab292;
+$light-gray: #999;
+$medium-gray: #666;
+$dark-gray: #333;
+// $dark-blue: #22313F;
+$green: #3FC380;
+$red: #D24D57;
+$yellow: #f1c205;
+$orange: #f08a24;
+
+// Project Specific Colors
+$light-lilac: #dddce6;
+$light-grey-purple: #9ea0c4;
+$light-purple: #838ab6;
+$bright-purple: #485ba9;
+$medium-purple: #323049;
+$dark-purple: #212030;
+
+$sky-blue: #00bff3;
+$dark-blue: #12151f;
+
+$almost-white: #f9f9f9;
+$super-light-grey: #f4f4f4;
+$light-grey: #eeeeee;
+$medium-grey: #bdbcbc;
+$charcoal-grey: #666666;
+$dark-grey: #222222;
+
+$hot-pink: #f16475;
+$salmon: #fa8a78;
+
+$light-turquoise: #93e1d0;
+$medium-turquoise: #84cebe;
+
+$mustard-yellow: #feb035;
+
+
+
+.flow--modal {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  position: fixed;
+  display: none;
+
+
+  .close--action {
+    color: $bright-purple;
+    font-size: rem-calc(24px);
+
+    top: 0.75em;
+    right: 0.75em;
+    position: absolute;
+
+    i {
+      color: $bright-purple;
+    }
+
+    &:hover {
+      color: scale-color($bright-purple, $lightness: -15%);
+      i { color: scale-color($bright-purple, $lightness: -15%); }
+    }
+  }
+
+  .modal--background {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(#000, 0.6);
+
+    opacity: 0;
+  }
+
+  .modal--content {
+    padding: 2.5em 1em;
+
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: $off-white;
+
+    opacity: 0;
+  }
+}
